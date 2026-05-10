@@ -1,5 +1,7 @@
 # python-venv-enforcement
 
+> **免责声明**：本技能由 AI 生成，未经人类作者审查。使用前请自行评估代码质量和安全性。
+
 一个 OpenCode / Claude Code 技能，强制 AI 编程助手掌写 Python 脚本时使用虚拟环境。
 
 每当 AI 要写带外部依赖的 Python 脚本时，必须先创建并激活 venv — 没有例外。
