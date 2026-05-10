@@ -76,11 +76,13 @@ If a `.gitignore` exists in the project, add `venv/` if not already present.
 | "The user didn't ask for venv" | Users want working, isolated code. Venv is infrastructure, not feature work. |
 | "I'm on Windows, venv activation is annoying" | `venv\Scripts\Activate.ps1` works. If blocked by execution policy, use `venv\Scripts\python.exe` directly. |
 | "venv already exists, nothing to do" | Still must activate it before pip install or running code. |
+| "I already ran `python -m venv venv`, I'm good" | Creating is not enough. Must activate OR use `venv\Scripts\python.exe` directly. |
 
 ## Red Flags — STOP and use venv
 
 - Writing `.py` file with `import` statements at the top
 - Running `pip install` before activating venv
+- **Created venv but haven't activated it yet** — venv exists but pip install goes global
 - "Let me just test this quickly" without venv
 - Copying code from another project without checking for venv
 
