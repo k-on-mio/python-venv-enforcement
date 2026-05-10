@@ -1,35 +1,35 @@
 # python-venv-enforcement
 
-An OpenCode/Claude Code skill that enforces Python virtual environment usage.
+一个 OpenCode / Claude Code 技能，强制 AI 编程助手掌写 Python 脚本时使用虚拟环境。
 
-Every time the agent writes a Python script with external dependencies, it must create and activate a venv first — no exceptions.
+每当 AI 要写带外部依赖的 Python 脚本时，必须先创建并激活 venv — 没有例外。
 
-## Features
+## 功能
 
-- Auto-detects Python tasks requiring dependencies
-- Forces venv creation before any `pip install`
-- Handles Windows execution policy fallback
-- Rationalization-proof with explicit counter-arguments
-- Works with OpenCode, Claude Code, and other Superpowers-compatible agents
+- 自动检测需要外部依赖的 Python 任务
+- 强制在 `pip install` 之前创建 venv
+- 处理 Windows 执行策略限制的绕过方案
+- 反辩心理表：针对 AI 可能产生的各种借口逐一反驳
+- 兼容 OpenCode、Claude Code 等支持 Superpowers 的智能体
 
-## Installation
+## 安装
 
-Place `SKILL.md` in your agent's skills directory:
+将 `SKILL.md` 放入对应智能体的 skills 目录：
 
-**OpenCode:**
+**OpenCode：**
 ```
 ~/.config/opencode/skills/python-venv-enforcement/SKILL.md
 ```
 
-**Claude Code:**
+**Claude Code：**
 ```
 ~/.claude/skills/python-venv-enforcement/SKILL.md
 ```
 
-## Usage
+## 使用
 
-The skill activates automatically. Just ask your agent to create a Python script — it will handle venv setup before writing code.
+技能自动触发。只要让 AI 写一个 Python 脚本，它会在写代码之前先搭好 venv。
 
-## License
+## 许可
 
 MIT
